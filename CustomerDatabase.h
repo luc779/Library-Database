@@ -32,7 +32,6 @@ private:
 
 public:
     bool addToHistory(std::string action, char movie_type, std::string director, std::string title, int year);
-
     bool addToHistory(std::string action, char movie_type, std::string director, std::string title, std::string major_actor, int release_date);
 };
 
