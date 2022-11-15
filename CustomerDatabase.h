@@ -35,6 +35,18 @@ public:
     bool addToHistory(std::string action, char movie_type, std::string director, std::string title, std::string major_actor, int release_date);
 };
 
+class Customer : public CustomerDatabase
+{
+private:
+    int customer_id;
+    std::string first_name;
+    std::string last_name;
+
+public:
+    void setCustomer(int customer_id, std::string first_name, std::string last_name);
+    int getID() const;
+};
+
 class Action
 {
 private:
@@ -46,16 +58,4 @@ public:
     void setMovie(Movie movie);
     char getAction() const;
     char getMovie() const;
-};
-
-class Customer : public CustomerDatabase
-{
-private:
-    int customer_id;
-    std::string first_name;
-    std::string last_name;
-
-public:
-    void setCustomer(int customer_id, std::string first_name, std::string last_name);
-    int getID() const;
 };
