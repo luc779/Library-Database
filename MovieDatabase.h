@@ -10,20 +10,19 @@
 
 #include <string>
 
-class MovieDatabase
-{
+class MovieDatabase {
 
 public:
-    MovieDatabase();
-    MovieDatabase(std::string file_name);
-    ~MovieDatabase();
+  MovieDatabase();
+  MovieDatabase(std::string file_name);
+  ~MovieDatabase();
 
-    void readInventoryFile(std::string file_name);
-    void readCustomerActions(std::string file_name);
+  void readInventoryFile(std::string file_name);
+  void readCustomerActions(std::string file_name);
 
 private:
-    void createInventoryDatabase();
-    void createCustomerDatabase();
+  void createInventoryDatabase();
+  void createCustomerDatabase();
 };
 
 #endif
