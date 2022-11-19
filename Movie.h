@@ -1,17 +1,18 @@
-/**
- * @file Movie.h
- * @author Luc Debaupte
- * @brief Header files for Movie, and its subclasses (including Comedy, Drama,
- * Classic)
- * @date 2022-11-13
- *
- */
-#pragma
-#include <stdio.h>
+//
+//  Movie.h
+//  HW5
+//
+//  Created by Luc Debaupte on 11/18/22.
+//
+
+#ifndef Movie_h
+#define Movie_h
+
 #include <string>
+#include "Type.h"
 
 class Movie {
-
+  
 public:
   void incrementStock() { stock++; };
   void decrementStock() { stock--; };
@@ -19,12 +20,15 @@ public:
   void setStock(int argStock) { argStock = stock; }
   void setDirector(std::string argDirector) { argDirector = director; }
   void setTitle(std::string argTitle) { argTitle = title; }
+  void setType(char argType) { Type movieType; movie_type.setType(argType); movieType = movie_type; }
 
+  Type getType() { return movie_type; }
   int getStock() { return stock; }
   std::string getDirector() { return director; }
   std::string getTitle() { return title; }
 
 private:
+  Type movie_type;
   int stock;
   std::string director;
   std::string title;
@@ -49,8 +53,9 @@ private:
 
 class Drama : public Movie {
 public:
-  void createMovie(int stock, std::string director, std::string title,
+  void createMovie(char type, int stock, std::string director, std::string title,
                    int yearRelease) {
+    setType(type);
     setStock(stock);
     setDirector(director);
     setTitle(title);
@@ -85,3 +90,5 @@ private:
   std::string major_actor;
   std::string release_date;
 };
+
+#endif /* Movie_h */

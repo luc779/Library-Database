@@ -1,63 +1,29 @@
-/**
- * @file CustomerDatabase.h
- * @author Benjamin Nguyen
- * @brief Header files for CustomerDatabase, CustomerHistory, Action, and
- * Customer
- * @date 2022-11-13
- *
- */
+//
+//  CustomerDatabase.hpp
+//  HW5
+//
+//  Created by Luc Debaupte on 11/18/22.
+//
 
-#pragma
+#ifndef CustomerDatabase_h
+#define CustomerDatabase_h
 
-#include "Movie.h"
 #include <string>
 #include <unordered_map>
 #include <vector>
+#include "Movie.h"
+#include "Customer.h"
+#include "CustomerHistory.h"
 
 class CustomerDatabase {
+  friend std::ostream &operator<<(std::ostream &, const CustomerDatabase);
 private:
-  Customer customer;
-  std::unordered_map<Customer, CustomerHistory> customerMap;
+//   std::unordered_map<Customer, int,  CustomerHistory> customerMap;
 
 public:
   int getCustomerHistory(int customer_id);
-  bool addCustomer(int customer_id, std::string first_name,
-                   std::string last_name);
-  friend std::ostream &operator<<(std::ostream &, const CustomerDatabase);
+  bool addCustomer(int customer_id, std::string first_name, std::string last_name);
+  
 };
 
-class CustomerHistory : public CustomerDatabase {
-private:
-  std::vector<Action> action_vector;
-
-public:
-  bool addToHistory(std::string action, char movie_type, std::string director,
-                    std::string title, int year);
-  bool addToHistory(std::string action, char movie_type, std::string director,
-                    std::string title, std::string major_actor,
-                    int release_date);
-};
-
-class Customer : public CustomerDatabase {
-private:
-  int customer_id;
-  std::string first_name;
-  std::string last_name;
-
-public:
-  void setCustomer(int customer_id, std::string first_name,
-                   std::string last_name);
-  int getID() const;
-};
-
-class Action {
-private:
-  char action;
-  Movie movie;
-
-public:
-  void setAction(Action action);
-  void setMovie(Movie movie);
-  char getAction() const;
-  char getMovie() const;
-};
+#endif /* CustomerDatabase_h */

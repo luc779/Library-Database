@@ -1,28 +1,38 @@
-/**
- * @file MovieDatabase.h
- * @author Ryan Leveck
- * @brief This is a header file for MovieDatabase
- * @date 2022-11-13
- *
- */
-#ifndef MOVIE_DATABASE
-#define MOVIE_DATABASE
+//
+//  MovieDatabase.hpp
+//  HW5
+//
+//  Created by Luc Debaupte on 11/18/22.
+//
+
+#ifndef MovieDatabase_h
+#define MovieDatabase_h
 
 #include <string>
+#include "Inventory.h"
+#include "CustomerDatabase.h"
 
 class MovieDatabase {
 
 public:
-  MovieDatabase();
-  MovieDatabase(std::string file_name);
-  ~MovieDatabase();
+    MovieDatabase();
+    MovieDatabase(const std::string file_name);
+    ~MovieDatabase();
 
-  void readInventoryFile(std::string file_name);
-  void readCustomerActions(std::string file_name);
+    void readInventoryFile(const std::string file_name);
+    void readCustomerActions(const std::string file_name);
+    void fileOpener(const std::string file_name, const std::string where_from);
+
+    void customerLineAdding(std::string line);
+    void inventoryLineAdding(std::string line);
+    void actionLineAdding(std::string line);
 
 private:
-  void createInventoryDatabase();
-  void createCustomerDatabase();
+    Inventory inventory;
+    CustomerDatabase customerDatabase;
+
+//    void createInventoryDatabase();
+//    void createCustomerDatabase();
 };
 
-#endif
+#endif /* MovieDatabase_h */
