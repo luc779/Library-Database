@@ -1,0 +1,1114 @@
+Mon Dec  5 16:06:43 PST 2022
+Linux csslab2 4.18.0-372.32.1.el8_6.x86_64 #1 SMP Thu Oct 27 15:18:36 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+uid=1084007(ldebau) gid=2121084007(ldebau) groups=2121084007(ldebau),605559(lab-access)
+=====================================================
+1. Compiles without warnings with -Wall -Wextra flags
+=====================================================
+=====================================================
+2. Runs and produces correct output
+=====================================================
+=========================
+| Reading Customer File |
+=========================
+Failed to open
+ fakeFileToCauseError.txt
+
+=========================
+| Reading Customer File |
+=========================
+==========================
+| Reading Inventory File |
+==========================
+Invalid Movie Type:
+     Z
+Invalid Movie Type:
+     Z
+==================================
+| Reading Customer Commands File |
+==================================
+======================
+| Printing Inventory |
+======================
+=======================================
+Comedies Section: 
+=======================================
+  F, 10, Woody Allen, Annie Hall,  1977
+  F, 10, Joel Coen, Fargo,  1996
+  F, 10, John Landis, National Lampoon's Animal House,  1978
+  F, 10, Different Years, Pirates of the Caribbean,  2000
+  F, 10, Gore Verbinski, Pirates of the Caribbean,  2003
+  F, 10, Nora Ephron, Sleepless in Seattle,  1993
+  F, 10, Rob Reiner, When Harry Met Sally,  1989
+  F, 10, Nora Ephron, You've Got Mail,  1998
+=======================================
+Dramas Section: 
+=======================================
+  D, 10, Barry Levinson, Good Morning Vietnam,  1988
+  D, 10, Barry Levinson, Same Director Good Morning Vietnam,  1988
+  D, 10, Clint Eastwood, Unforgiven,  1992
+  D, 10, Gus Van Sant, Good Will Hunting,  2000
+  D, 10, Jonathan Demme, Silence of the Lambs,  1991
+  D, 10, Nancy Savoca, Dogfight,  1991
+  D, 10, Phillippe De Broca, King of Hearts,  1967
+  D, 10, Steven Spielberg, Schindler's List,  1993
+=======================================
+Classics Section: 
+=======================================
+  C, 10, George Cukor, Holiday, Cary Grant, 9 1938 
+  C, 10, George Cukor, Holiday, Katherine Hepburn, 9 1938 
+  C, 10, Victor Fleming, Gone With the Wind, Clark Gable, 2 1939 
+  C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh, 2 1939 
+  C, 10, Victor Fleming, The Wizard of Oz, Judy Garland, 7 1939 
+  C, 10, George Cukor, The Philadelphia Story, Cary Grant, 5 1940 
+  C, 10, George Cukor, The Philadelphia Story, Katherine Hepburn, 5 1940 
+  C, 10, John Huston, The Maltese Falcon, Humphrey Bogart, 10 1941 
+  C, 10, Michael Curtiz, Casablanca, Humphrey Bogart, 8 1942 
+  C, 10, Michael Curtiz, Casablanca, Ingrid Bergman, 8 1942 
+  C, 10, Frank Capra, It's a Wonderful Life, Donna Reed, 11 1946 
+  C, 10, Frank Capra, It's a Wonderful Life, James Steward, 11 1946 
+  C, 10, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell, 2 1971 
+  C, 10, Hal Ashby, Harold and Maude, Ruth Gordon, 3 1971 
+
+Checking History of, 1000: 
+     No History
+
+Checking History of, 5000: 
+     No History
+
+Checking History of, 8000: 
+     No History
+
+Customer not in Database: 
+     1212
+
+Customer not in Database: 
+     1212
+
+Out of Stock:
+    B D D Barry Levinson,Good Morning Vietnam
+
+Invalid media type
+    B D Z 
+
+Out of Stock:
+    B D F You've Got Mail, 1998
+
+Invalid Command
+    X
+
+Invalid Command
+    Z
+
+Customer not in Database: 
+     1234
+
+Movie Not In Database:
+    B D F Bogus Title, 2001
+
+Invalid media type
+    B Z F ,
+
+Out of Stock:
+    B D C 3 1971 Ruth Gordon
+
+Out of Stock:
+    B D C 3 1971 Ruth Gordon
+
+Out of Stock:
+    B D C 3 1971 Ruth Gordon
+
+Movie Not In Database:
+    B D D Steven Spielberg,Bogus Title
+======================
+| Printing Inventory |
+======================
+=======================================
+Comedies Section: 
+=======================================
+  F, 9, Woody Allen, Annie Hall,  1977
+  F, 9, Joel Coen, Fargo,  1996
+  F, 9, John Landis, National Lampoon's Animal House,  1978
+  F, 10, Different Years, Pirates of the Caribbean,  2000
+  F, 10, Gore Verbinski, Pirates of the Caribbean,  2003
+  F, 9, Nora Ephron, Sleepless in Seattle,  1993
+  F, 9, Rob Reiner, When Harry Met Sally,  1989
+  F, 0, Nora Ephron, You've Got Mail,  1998
+=======================================
+Dramas Section: 
+=======================================
+  D, 0, Barry Levinson, Good Morning Vietnam,  1988
+  D, 10, Barry Levinson, Same Director Good Morning Vietnam,  1988
+  D, 9, Clint Eastwood, Unforgiven,  1992
+  D, 9, Gus Van Sant, Good Will Hunting,  2000
+  D, 9, Jonathan Demme, Silence of the Lambs,  1991
+  D, 8, Nancy Savoca, Dogfight,  1991
+  D, 9, Phillippe De Broca, King of Hearts,  1967
+  D, 9, Steven Spielberg, Schindler's List,  1993
+=======================================
+Classics Section: 
+=======================================
+  C, 9, George Cukor, Holiday, Cary Grant, 9 1938 
+  C, 10, George Cukor, Holiday, Katherine Hepburn, 9 1938 
+  C, 10, Victor Fleming, Gone With the Wind, Clark Gable, 2 1939 
+  C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh, 2 1939 
+  C, 10, Victor Fleming, The Wizard of Oz, Judy Garland, 7 1939 
+  C, 9, George Cukor, The Philadelphia Story, Cary Grant, 5 1940 
+  C, 9, George Cukor, The Philadelphia Story, Katherine Hepburn, 5 1940 
+  C, 9, John Huston, The Maltese Falcon, Humphrey Bogart, 10 1941 
+  C, 10, Michael Curtiz, Casablanca, Humphrey Bogart, 8 1942 
+  C, 10, Michael Curtiz, Casablanca, Ingrid Bergman, 8 1942 
+  C, 10, Frank Capra, It's a Wonderful Life, Donna Reed, 11 1946 
+  C, 10, Frank Capra, It's a Wonderful Life, James Steward, 11 1946 
+  C, 9, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell, 2 1971 
+  C, 0, Hal Ashby, Harold and Maude, Ruth Gordon, 3 1971 
+
+Checking History of, 1000: 
+     B D D Steven Spielberg,Bogus Title
+     B D F Bogus Title, 2001
+     B D C 3 1971 Ruth Gordon
+     B D C 5 1940 Cary Grant
+     B D D Gus Van Sant,Good Will Hunting
+     B D C 5 1940 Katherine Hepburn
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     B D D Barry Levinson,Good Morning Vietnam
+     H
+
+Checking History of, 1111: 
+     B D C 9 1938 Cary Grant
+     B D C 10 1941 Humphrey Bogart
+     B D C 3 1971 Ruth Gordon
+     B D C 2 1971 Malcolm McDowell
+
+Checking History of, 5000: 
+     B D C 3 1971 Ruth Gordon
+     R D C 3 1971 Ruth Gordon
+     B D C 3 1971 Ruth Gordon
+     R D C 3 1971 Ruth Gordon
+     B D C 3 1971 Ruth Gordon
+     R D C 3 1971 Ruth Gordon
+     B D C 3 1971 Ruth Gordon
+     H
+
+Checking History of, 8000: 
+     B D F National Lampoon's Animal House, 1978
+     B D C 3 1971 Ruth Gordon
+     B D C 3 1971 Ruth Gordon
+     R D F You've Got Mail, 1998
+     B D F You've Got Mail, 1998
+     H
+
+Checking History of, 8888: 
+     B D C 3 1971 Ruth Gordon
+     B D D Nancy Savoca,Dogfight
+     R D D Jonathan Demme,Silence of the Lambs
+     B D D Jonathan Demme,Silence of the Lambs
+     B D D Jonathan Demme,Silence of the Lambs
+     B D F When Harry Met Sally, 1989
+     B D F Annie Hall, 1977
+=====================================================
+3. clang-tidy warnings are fixed
+=====================================================
+18083 warnings generated.
+31558 warnings generated.
+48854 warnings generated.
+67235 warnings generated.
+Suppressed 67235 warnings (67235 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+=====================================================
+4. clang-format does not find any formatting issues
+=====================================================
+Running clang-format on ./CustomerDatabase.cpp
+7c7
+< // void method to add customer to the storage 
+---
+> // void method to add customer to the storage
+11,12c11,12
+<     CustomerHistory new_customer_history;
+<     customerMap[argCustomer] = new_customer_history;
+---
+>   CustomerHistory new_customer_history;
+>   customerMap[argCustomer] = new_customer_history;
+19,22c19,21
+<     for (const auto& i : customerMap) {
+<         if (i.first.getID() == argCustomerID) {
+<             i.second.getHistory();
+<         }
+---
+>   for (const auto &i : customerMap) {
+>     if (i.first.getID() == argCustomerID) {
+>       i.second.getHistory();
+24c23,24
+<     return 0;
+---
+>   }
+>   return 0;
+29,31c29,31
+< // throught if its a History check, uses customerID to show that persons history,
+< // then adds that history check to the history, if not a history check just adds,
+< // it to customerHistory object
+---
+> // throught if its a History check, uses customerID to show that persons
+> // history, then adds that history check to the history, if not a history check
+> // just adds, it to customerHistory object
+33c33,34
+< void CustomerDatabase::addCustomerHistory(int customerID, const Action &argAction) {
+---
+> void CustomerDatabase::addCustomerHistory(int customerID,
+>                                           const Action &argAction) {
+35,38c36,39
+<     if (argAction.getActionType() == "H") {
+<         std::cout << "\nChecking History of, " << customerID << ": " << std::endl;
+<         getCustomerHistory(customerID);
+<     } 
+---
+>   if (argAction.getActionType() == "H") {
+>     std::cout << "\nChecking History of, " << customerID << ": " << std::endl;
+>     getCustomerHistory(customerID);
+>   }
+40,43c41,43
+<     for (auto& i : customerMap) {
+<         if (i.first.getID() == customerID) {
+<             i.second.addToHistory(argAction);
+<         }
+---
+>   for (auto &i : customerMap) {
+>     if (i.first.getID() == customerID) {
+>       i.second.addToHistory(argAction);
+44a45
+>   }
+50,53c51,53
+<     for (const auto &i : customerMap) {
+<         if (i.first.getID() == customerID) {
+<             return true;
+<         }
+---
+>   for (const auto &i : customerMap) {
+>     if (i.first.getID() == customerID) {
+>       return true;
+55,56c55,58
+<     std::cout << "\nCustomer not in Database: \n" << "     " << customerID << std::endl;
+<     return false;
+---
+>   }
+>   std::cout << "\nCustomer not in Database: \n"
+>             << "     " << customerID << std::endl;
+>   return false;
+58d59
+< 
+Running clang-format on ./Inventory.cpp
+19c19,20
+< // functions to print each map respective to the type of movie (i.e comedy, drama, classic)
+---
+> // functions to print each map respective to the type of movie (i.e comedy,
+> // drama, classic)
+22,25c23,27
+<     std::string out = "  ";
+<     out.push_back(movie.getType());
+<     out += ", " + std::to_string(movie.getStock()) + ", " + movie.getDirector() + ", " +  movie.getTitle() + ", " + movie.getYearRelease();
+<     return out;
+---
+>   std::string out = "  ";
+>   out.push_back(movie.getType());
+>   out += ", " + std::to_string(movie.getStock()) + ", " + movie.getDirector() +
+>          ", " + movie.getTitle() + ", " + movie.getYearRelease();
+>   return out;
+29,32c31,35
+<     std::string out = "  ";
+<     out.push_back(movie.getType());
+<     out += ", " + std::to_string(movie.getStock()) + ", " + movie.getDirector() + ", " +  movie.getTitle() + ", " + movie.getYearRelease();
+<     return out;
+---
+>   std::string out = "  ";
+>   out.push_back(movie.getType());
+>   out += ", " + std::to_string(movie.getStock()) + ", " + movie.getDirector() +
+>          ", " + movie.getTitle() + ", " + movie.getYearRelease();
+>   return out;
+36,43c39,48
+<     std::string out = "  ";
+<     std::string reverse_release_date = movie.getReleaseDate();
+<     std::string s2 = reverse_release_date;
+<     reverse_release_date.erase(0,5);
+<     reverse_release_date += " " + s2.substr(0,5);
+<     out.push_back(movie.getType());
+<     out +=  ", " + std::to_string(movie.getStock()) + ", " + movie.getDirector() + ", " +  movie.getTitle() + ", " + movie.getMajorActor() + ", " + reverse_release_date;
+<     return out;
+---
+>   std::string out = "  ";
+>   std::string reverse_release_date = movie.getReleaseDate();
+>   std::string s2 = reverse_release_date;
+>   reverse_release_date.erase(0, 5);
+>   reverse_release_date += " " + s2.substr(0, 5);
+>   out.push_back(movie.getType());
+>   out += ", " + std::to_string(movie.getStock()) + ", " + movie.getDirector() +
+>          ", " + movie.getTitle() + ", " + movie.getMajorActor() + ", " +
+>          reverse_release_date;
+>   return out;
+51,61c56,65
+<     std::cout << "======================" << std::endl;
+<     std::cout << "| Printing Inventory |" << std::endl;
+<     std::cout << "======================"<< std::endl;
+<     
+<     std::cout << "=======================================" << std::endl;
+<     std::cout << "Comedies Section: " << std::endl;
+<     std::cout << "======================================="<< std::endl;
+<     for (const auto &comedy : comedyMap) {
+<         for (const auto &comedy_inside : comedy.second) {
+<             std::cout << printComedy(comedy_inside.second) << std::endl;
+<         }
+---
+>   std::cout << "======================" << std::endl;
+>   std::cout << "| Printing Inventory |" << std::endl;
+>   std::cout << "======================" << std::endl;
+> 
+>   std::cout << "=======================================" << std::endl;
+>   std::cout << "Comedies Section: " << std::endl;
+>   std::cout << "=======================================" << std::endl;
+>   for (const auto &comedy : comedyMap) {
+>     for (const auto &comedy_inside : comedy.second) {
+>       std::cout << printComedy(comedy_inside.second) << std::endl;
+63,70c67,74
+<     
+<     std::cout << "=======================================" << std::endl;
+<     std::cout << "Dramas Section: " << std::endl;
+<     std::cout << "======================================="<< std::endl;
+<     for (const auto &drama : dramaMap) {
+<         for (const auto &contents : drama.second) {
+<             std::cout << printDrama(contents.second) << std::endl;
+<         }
+---
+>   }
+> 
+>   std::cout << "=======================================" << std::endl;
+>   std::cout << "Dramas Section: " << std::endl;
+>   std::cout << "=======================================" << std::endl;
+>   for (const auto &drama : dramaMap) {
+>     for (const auto &contents : drama.second) {
+>       std::cout << printDrama(contents.second) << std::endl;
+71a76
+>   }
+73,79c78,83
+< std::cout << "=======================================" << std::endl;
+<     std::cout << "Classics Section: " << std::endl;
+<     std::cout << "======================================="<< std::endl;
+<     for (const auto &classic : classicMap) {
+<         for (const auto &contents : classic.second) {
+<             std::cout << printClassics(contents.second) << std::endl;
+<         }
+---
+>   std::cout << "=======================================" << std::endl;
+>   std::cout << "Classics Section: " << std::endl;
+>   std::cout << "=======================================" << std::endl;
+>   for (const auto &classic : classicMap) {
+>     for (const auto &contents : classic.second) {
+>       std::cout << printClassics(contents.second) << std::endl;
+80a85
+>   }
+84c89,90
+< // functions to add to inventory based on what type the movie is (i.e comedy, drama, classic)
+---
+> // functions to add to inventory based on what type the movie is (i.e comedy,
+> // drama, classic)
+87c93
+<     comedyMap[movie.getTitle()].insert({movie.getYearRelease(), movie});
+---
+>   comedyMap[movie.getTitle()].insert({movie.getYearRelease(), movie});
+91c97
+<     classicMap[movie.getReleaseDate()].insert({movie.getMajorActor(), movie});
+---
+>   classicMap[movie.getReleaseDate()].insert({movie.getMajorActor(), movie});
+95c101
+<     dramaMap[movie.getDirector()].insert({movie.getTitle(), movie});
+---
+>   dramaMap[movie.getDirector()].insert({movie.getTitle(), movie});
+104,121c110,122
+<     if (action.getMovieType() == "C") {
+<         std::string release_date = action.getYear() + " " + action.getMonth();
+<         for (auto& it: classicMap) {
+<             if(it.first == release_date) {
+<                 for (auto& movie: it.second) {
+<                     if (movie.first == action.getMajorActor()) {
+<                         if (borrow) {
+<                             if (movie.second.getStock() == 0) {
+<                                 std::cout << "\nOut of Stock:\n    " << action << std::endl;
+<                                 return;
+<                             }
+<                             movie.second.decrementStock();
+<                             return;
+<                         }
+<                         movie.second.incrementStock();
+<                         return;
+<                     }
+<                 }
+---
+>   if (action.getMovieType() == "C") {
+>     std::string release_date = action.getYear() + " " + action.getMonth();
+>     for (auto &it : classicMap) {
+>       if (it.first == release_date) {
+>         for (auto &movie : it.second) {
+>           if (movie.first == action.getMajorActor()) {
+>             if (borrow) {
+>               if (movie.second.getStock() == 0) {
+>                 std::cout << "\nOut of Stock:\n    " << action << std::endl;
+>                 return;
+>               }
+>               movie.second.decrementStock();
+>               return;
+122a124,126
+>             movie.second.incrementStock();
+>             return;
+>           }
+124,141c128,142
+<         
+<     } else if (action.getMovieType() == "F") {
+<         for (auto& it: comedyMap) {
+<             if(it.first == action.getTitle()) {
+<                 for (auto& movie: it.second) {
+<                     if (movie.first == action.getYear()) {
+<                         if (borrow) {
+<                             if (movie.second.getStock() == 0) {
+<                                 std::cout << "\nOut of Stock:\n    " << action << std::endl;
+<                                 return;
+<                             }
+<                             movie.second.decrementStock();
+<                             return;
+<                         }
+<                         movie.second.incrementStock();
+<                         return;
+<                     }
+<                 }
+---
+>       }
+>     }
+> 
+>   } else if (action.getMovieType() == "F") {
+>     for (auto &it : comedyMap) {
+>       if (it.first == action.getTitle()) {
+>         for (auto &movie : it.second) {
+>           if (movie.first == action.getYear()) {
+>             if (borrow) {
+>               if (movie.second.getStock() == 0) {
+>                 std::cout << "\nOut of Stock:\n    " << action << std::endl;
+>                 return;
+>               }
+>               movie.second.decrementStock();
+>               return;
+142a144,146
+>             movie.second.incrementStock();
+>             return;
+>           }
+143a148,149
+>       }
+>     }
+145,161c151,162
+<     } else if (action.getMovieType() == "D") {
+<         for (auto& it : dramaMap) {
+<             if(it.first == action.getDirector()) {
+<                 for (auto& movie: it.second) {
+<                     if(movie.first == action.getTitle()) {
+<                         if (borrow) {
+<                             if (movie.second.getStock() == 0) {
+<                                 std::cout << "\nOut of Stock:\n    " << action << std::endl;
+<                                 return;
+<                             }
+<                             movie.second.decrementStock();
+<                             return;
+<                         }
+<                         movie.second.incrementStock();
+<                         return;
+<                     }
+<                 }
+---
+>   } else if (action.getMovieType() == "D") {
+>     for (auto &it : dramaMap) {
+>       if (it.first == action.getDirector()) {
+>         for (auto &movie : it.second) {
+>           if (movie.first == action.getTitle()) {
+>             if (borrow) {
+>               if (movie.second.getStock() == 0) {
+>                 std::cout << "\nOut of Stock:\n    " << action << std::endl;
+>                 return;
+>               }
+>               movie.second.decrementStock();
+>               return;
+162a164,166
+>             movie.second.incrementStock();
+>             return;
+>           }
+163a168
+>       }
+165c170,171
+<     std::cout << "\nMovie Not In Database:\n    " << action << std::endl;
+---
+>   }
+>   std::cout << "\nMovie Not In Database:\n    " << action << std::endl;
+Running clang-format on ./main.cpp
+4,8c4,8
+<     MovieDatabase movie_fake("fakeFileToCauseError.txt");
+<     MovieDatabase movie_base("data4customers.txt");
+<     movie_base.readInventoryFile("data4movies.txt");
+<     movie_base.readCustomerActions("data4commands.txt");
+<     return 0;
+---
+>   MovieDatabase movie_fake("fakeFileToCauseError.txt");
+>   MovieDatabase movie_base("data4customers.txt");
+>   movie_base.readInventoryFile("data4movies.txt");
+>   movie_base.readCustomerActions("data4commands.txt");
+>   return 0;
+Running clang-format on ./MovieDatabase.cpp
+7a8,11
+> #include "MovieDatabase.h"
+> #include "Action.h"
+> #include "Inventory.h"
+> #include "Movie.h"
+8a13
+> #include <iostream>
+11,15d15
+< #include <iostream>
+< #include "Movie.h"
+< #include "MovieDatabase.h"
+< #include "Inventory.h"
+< #include "Action.h"
+22,28c22,28
+<     
+<     std::cout << "=========================" << std::endl;
+<     std::cout << "| Reading Customer File |" << std::endl;
+<     std::cout << "========================="<< std::endl;
+<     
+<     std::string where_from = "customer";
+<     fileOpener(file_name, where_from);
+---
+> 
+>   std::cout << "=========================" << std::endl;
+>   std::cout << "| Reading Customer File |" << std::endl;
+>   std::cout << "=========================" << std::endl;
+> 
+>   std::string where_from = "customer";
+>   fileOpener(file_name, where_from);
+35,36d34
+<     
+<     Customer new_customer;
+38,47c36,40
+<     int customer_id;
+<     std::string first_name;
+<     std::string last_name;
+<     
+<     std::istringstream iss(line);
+<     iss >> customer_id >> last_name >> first_name;
+<     
+<     new_customer.setCustomer(customer_id, first_name, last_name);
+<     customerDatabase.addCustomer(new_customer);
+< }
+---
+>   Customer new_customer;
+> 
+>   int customer_id;
+>   std::string first_name;
+>   std::string last_name;
+48a42,47
+>   std::istringstream iss(line);
+>   iss >> customer_id >> last_name >> first_name;
+> 
+>   new_customer.setCustomer(customer_id, first_name, last_name);
+>   customerDatabase.addCustomer(new_customer);
+> }
+54,60c53,59
+<     
+<     std::cout << "==========================" << std::endl;
+<     std::cout << "| Reading Inventory File |" << std::endl;
+<     std::cout << "=========================="<< std::endl;
+<     
+<     std::string where_from = "inventory";
+<     fileOpener(file_name, where_from);
+---
+> 
+>   std::cout << "==========================" << std::endl;
+>   std::cout << "| Reading Inventory File |" << std::endl;
+>   std::cout << "==========================" << std::endl;
+> 
+>   std::string where_from = "inventory";
+>   fileOpener(file_name, where_from);
+68,106c67,106
+<     char movie_type;
+<     movie_type = line[0];
+<     line.erase(0,3);
+< 
+<     std::istringstream ss(line);
+< 
+<     std::string stock_string;
+<     std::string year_string;
+<     std::string director;
+<     std::string title;
+<     int stock;
+<     
+<     // C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+<     // C, Stock, Director, Title, Major actor Release date 
+<     if( movie_type == 'C') {
+< 
+<         std::string major_actor_first;
+<         std::string major_actor_last;
+< 
+<         std::string month_string;
+<         std::string useless;
+< 
+<         std::getline(ss, stock_string, ',');
+<         stock = std::stoi(stock_string);
+<         std::getline(ss, director, ',');
+<         director.erase(0,1);
+<         std::getline(ss, title, ',');
+<         title.erase(0,1);
+<         std::getline(ss, useless, ' ');
+<         std::getline(ss, major_actor_first, ' ');
+<         std::getline(ss, major_actor_last, ' ');
+<         major_actor_first += " " + major_actor_last;
+<         std::getline(ss, month_string, ' ');
+<         std::getline(ss, year_string);
+< 
+<         std::string release_date = year_string + " " + month_string;
+< 
+<         Classics new_classic;
+<         new_classic.createMovie(movie_type, stock, director, title, major_actor_first, release_date);
+---
+>   char movie_type;
+>   movie_type = line[0];
+>   line.erase(0, 3);
+> 
+>   std::istringstream ss(line);
+> 
+>   std::string stock_string;
+>   std::string year_string;
+>   std::string director;
+>   std::string title;
+>   int stock;
+> 
+>   // C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+>   // C, Stock, Director, Title, Major actor Release date
+>   if (movie_type == 'C') {
+> 
+>     std::string major_actor_first;
+>     std::string major_actor_last;
+> 
+>     std::string month_string;
+>     std::string useless;
+> 
+>     std::getline(ss, stock_string, ',');
+>     stock = std::stoi(stock_string);
+>     std::getline(ss, director, ',');
+>     director.erase(0, 1);
+>     std::getline(ss, title, ',');
+>     title.erase(0, 1);
+>     std::getline(ss, useless, ' ');
+>     std::getline(ss, major_actor_first, ' ');
+>     std::getline(ss, major_actor_last, ' ');
+>     major_actor_first += " " + major_actor_last;
+>     std::getline(ss, month_string, ' ');
+>     std::getline(ss, year_string);
+> 
+>     std::string release_date = year_string + " " + month_string;
+> 
+>     Classics new_classic;
+>     new_classic.createMovie(movie_type, stock, director, title,
+>                             major_actor_first, release_date);
+108c108
+<         inventory.addToInventory(new_classic);
+---
+>     inventory.addToInventory(new_classic);
+112,124c112,124
+<     } else if (movie_type == 'D') {
+<         
+<         std::getline(ss, stock_string, ',');
+<         stock = std::stoi(stock_string);
+<         std::getline(ss, director, ',');
+<         director.erase(0,1);
+<         std::getline(ss, title, ',');
+<         title.erase(0,1);
+<         std::getline(ss, year_string);
+< 
+<         Drama new_drama;
+<         new_drama.createMovie(movie_type, stock, director, title, year_string);
+<         inventory.addToInventory(new_drama);
+---
+>   } else if (movie_type == 'D') {
+> 
+>     std::getline(ss, stock_string, ',');
+>     stock = std::stoi(stock_string);
+>     std::getline(ss, director, ',');
+>     director.erase(0, 1);
+>     std::getline(ss, title, ',');
+>     title.erase(0, 1);
+>     std::getline(ss, year_string);
+> 
+>     Drama new_drama;
+>     new_drama.createMovie(movie_type, stock, director, title, year_string);
+>     inventory.addToInventory(new_drama);
+128,144c128,145
+<     } else if (movie_type == 'F') {
+<         
+<         std::getline(ss, stock_string, ',');
+<         stock = stoi(stock_string);
+<         std::getline(ss, director, ',');
+<         director.erase(0, 1);
+<         std::getline(ss, title, ',');
+<         title.erase(0, 1);
+<         std::getline(ss, year_string);
+< 
+<         Comedy new_comedy;
+<         new_comedy.createMovie(movie_type, stock, director, title, year_string);
+<         inventory.addToInventory(new_comedy);
+<         
+<     } else {
+<         std::cout << "Invalid Movie Type:\n" << "     " << movie_type << std::endl;
+<     }
+---
+>   } else if (movie_type == 'F') {
+> 
+>     std::getline(ss, stock_string, ',');
+>     stock = stoi(stock_string);
+>     std::getline(ss, director, ',');
+>     director.erase(0, 1);
+>     std::getline(ss, title, ',');
+>     title.erase(0, 1);
+>     std::getline(ss, year_string);
+> 
+>     Comedy new_comedy;
+>     new_comedy.createMovie(movie_type, stock, director, title, year_string);
+>     inventory.addToInventory(new_comedy);
+> 
+>   } else {
+>     std::cout << "Invalid Movie Type:\n"
+>               << "     " << movie_type << std::endl;
+>   }
+151,157c152,158
+<     
+<     std::cout << "==================================" << std::endl;
+<     std::cout << "| Reading Customer Commands File |" << std::endl;
+<     std::cout << "=================================="<< std::endl;
+<     
+<     std::string where_from = "action";
+<     fileOpener(file_name, where_from);
+---
+> 
+>   std::cout << "==================================" << std::endl;
+>   std::cout << "| Reading Customer Commands File |" << std::endl;
+>   std::cout << "==================================" << std::endl;
+> 
+>   std::string where_from = "action";
+>   fileOpener(file_name, where_from);
+165,188c166,189
+<     Action new_action;
+<     std::string action_type(1, line[0]);
+<     new_action.setType(action_type);
+<     line.erase(0,2);
+< 
+<     std::stringstream ss(line);
+<     std::string string_customer_id;
+<     int customer_id;
+<     std::string director;
+<     std::string media_type;
+<     std::string movie_type;
+<     std::string title;
+<     std::string string_year;
+<     std::string string_month;
+<     std::string actor;
+< 
+<     // H 8000
+<     if (new_action.getActionType() == "H") {
+<         std::getline(ss,string_customer_id);
+<         customer_id = stoi(string_customer_id);
+<         
+<         if(!customerDatabase.customerExists(customer_id)) {
+<             return;
+<         }
+---
+>   Action new_action;
+>   std::string action_type(1, line[0]);
+>   new_action.setType(action_type);
+>   line.erase(0, 2);
+> 
+>   std::stringstream ss(line);
+>   std::string string_customer_id;
+>   int customer_id;
+>   std::string director;
+>   std::string media_type;
+>   std::string movie_type;
+>   std::string title;
+>   std::string string_year;
+>   std::string string_month;
+>   std::string actor;
+> 
+>   // H 8000
+>   if (new_action.getActionType() == "H") {
+>     std::getline(ss, string_customer_id);
+>     customer_id = stoi(string_customer_id);
+> 
+>     if (!customerDatabase.customerExists(customer_id)) {
+>       return;
+>     }
+194,224c195,211
+<     } else if (new_action.getActionType() == "B" || new_action.getActionType() == "R") {
+<         
+<         std::getline(ss,string_customer_id, ' ');
+<        customer_id = stoi(string_customer_id);
+<         std::getline(ss, media_type, ' ');
+<         std::getline(ss, movie_type, ' ');
+<         new_action.setMediaType(media_type);
+<         new_action.setMovieType(movie_type);
+< 
+<         if (new_action.getMediaType() == "D" && ((new_action.getMovieType() == "C" || new_action.getMovieType() == "D") || new_action.getMovieType() == "F")) {
+<             new_action = actionHelper(new_action, title, director, string_month, string_year, actor, ss);
+< 
+<         } else {
+<             std::cout << "\nInvalid media type\n    " << new_action << std::endl;
+<             return;
+<         }
+<         
+<         if (!customerDatabase.customerExists(customer_id)) {
+<             return;
+<         }
+< 
+<         if (new_action.getActionType() == "R") {
+<             inventory.borrowOrReturnMovie(new_action, false);
+<         } else {
+<             inventory.borrowOrReturnMovie(new_action, true);
+<         }
+<         
+<     // get inventory returns because it is not a customer command
+<     } else if (new_action.getActionType() == "I") {
+<         inventory.getInventory();
+<         return;
+---
+>   } else if (new_action.getActionType() == "B" ||
+>              new_action.getActionType() == "R") {
+> 
+>     std::getline(ss, string_customer_id, ' ');
+>     customer_id = stoi(string_customer_id);
+>     std::getline(ss, media_type, ' ');
+>     std::getline(ss, movie_type, ' ');
+>     new_action.setMediaType(media_type);
+>     new_action.setMovieType(movie_type);
+> 
+>     if (new_action.getMediaType() == "D" &&
+>         ((new_action.getMovieType() == "C" ||
+>           new_action.getMovieType() == "D") ||
+>          new_action.getMovieType() == "F")) {
+>       new_action = actionHelper(new_action, title, director, string_month,
+>                                 string_year, actor, ss);
+> 
+226,227c213,214
+<         std::cout << "\nInvalid Command\n    " << new_action << std::endl;
+<         return;
+---
+>       std::cout << "\nInvalid media type\n    " << new_action << std::endl;
+>       return;
+230,235c217,219
+<     customerDatabase.addCustomerHistory(customer_id, new_action);
+<         
+< }
+< 
+< Action MovieDatabase::actionHelper(Action &newAction, std::string &title, std::string &director,
+<     std::string &string_month, std::string &string_year, std::string &actor, std::stringstream &ss) {
+---
+>     if (!customerDatabase.customerExists(customer_id)) {
+>       return;
+>     }
+237,249c221,224
+<     if (newAction.getMovieType() == "F") {
+<         std::getline(ss, title, ',');
+<         std::getline(ss, string_year);
+< 
+<     } else if (newAction.getMovieType() == "D") {
+<         std::getline(ss, director, ',');
+<         std::getline(ss, title, ',');
+<         title.erase(0,1);
+<                 
+<     } else if (newAction.getMovieType() == "C") {
+<         std::getline(ss, string_month, ' ');
+<         std::getline(ss, string_year, ' ');
+<         std::getline(ss, actor);
+---
+>     if (new_action.getActionType() == "R") {
+>       inventory.borrowOrReturnMovie(new_action, false);
+>     } else {
+>       inventory.borrowOrReturnMovie(new_action, true);
+252,256c227,264
+<     newAction.setDirector(director);
+<     newAction.setMajorActor(actor);
+<     newAction.setMonth(string_month);
+<     newAction.setYear(string_year);
+<     newAction.setTitle(title);
+---
+>     // get inventory returns because it is not a customer command
+>   } else if (new_action.getActionType() == "I") {
+>     inventory.getInventory();
+>     return;
+>   } else {
+>     std::cout << "\nInvalid Command\n    " << new_action << std::endl;
+>     return;
+>   }
+> 
+>   customerDatabase.addCustomerHistory(customer_id, new_action);
+> }
+> 
+> Action MovieDatabase::actionHelper(Action &newAction, std::string &title,
+>                                    std::string &director,
+>                                    std::string &string_month,
+>                                    std::string &string_year, std::string &actor,
+>                                    std::stringstream &ss) {
+> 
+>   if (newAction.getMovieType() == "F") {
+>     std::getline(ss, title, ',');
+>     std::getline(ss, string_year);
+> 
+>   } else if (newAction.getMovieType() == "D") {
+>     std::getline(ss, director, ',');
+>     std::getline(ss, title, ',');
+>     title.erase(0, 1);
+> 
+>   } else if (newAction.getMovieType() == "C") {
+>     std::getline(ss, string_month, ' ');
+>     std::getline(ss, string_year, ' ');
+>     std::getline(ss, actor);
+>   }
+> 
+>   newAction.setDirector(director);
+>   newAction.setMajorActor(actor);
+>   newAction.setMonth(string_month);
+>   newAction.setYear(string_year);
+>   newAction.setTitle(title);
+258c266
+<     return newAction;
+---
+>   return newAction;
+264,269c272,281
+< void MovieDatabase::fileOpener(const std::string &file_name, const std::string &where_from) {
+<     
+<     std::ifstream myfile(file_name);
+<     if (!myfile.is_open())  {
+<         std::cout << "Failed to open\n " << file_name << "\n" << std::endl;
+<     }
+---
+> void MovieDatabase::fileOpener(const std::string &file_name,
+>                                const std::string &where_from) {
+> 
+>   std::ifstream myfile(file_name);
+>   if (!myfile.is_open()) {
+>     std::cout << "Failed to open\n " << file_name << "\n" << std::endl;
+>   }
+> 
+>   std::string line;
+>   while (getline(myfile, line)) {
+271,282c283,290
+<     std::string line;
+<     while(getline(myfile,line)) {
+<         
+<         if (where_from == "customer")  {
+<             customerLineAdding(line);
+<         }
+<         if (where_from == "inventory") {
+<             inventoryLineAdding(line);
+<         }
+<         if (where_from == "action") {
+<             actionLineAdding(line);
+<         }
+---
+>     if (where_from == "customer") {
+>       customerLineAdding(line);
+>     }
+>     if (where_from == "inventory") {
+>       inventoryLineAdding(line);
+>     }
+>     if (where_from == "action") {
+>       actionLineAdding(line);
+284c292,293
+<     myfile.close();
+---
+>   }
+>   myfile.close();
+=====================================================
+5. No memory leaks using g++
+=====================================================
+=====================================================
+6. No memory leaks using valgrind, look for "definitely lost" 
+=====================================================
+==1846093== Memcheck, a memory error detector
+==1846093== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1846093== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1846093== Command: ./a.out
+==1846093== Parent PID: 1846035
+==1846093== 
+==1846093== 
+==1846093== HEAP SUMMARY:
+==1846093==     in use at exit: 0 bytes in 0 blocks
+==1846093==   total heap usage: 1,003 allocs, 1,003 frees, 161,010 bytes allocated
+==1846093== 
+==1846093== All heap blocks were freed -- no leaks are possible
+==1846093== 
+==1846093== For lists of detected and suppressed errors, rerun with: -s
+==1846093== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=====================================================
+7. Tests have full code coverage
+=====================================================
+File '/home/NETID/ldebau/HW4-headers-2/CustomerDatabase.cpp':
+Name                                                       Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+--------------------------------------------------------------------------------------------------------------------------------------
+CustomerDatabase::addCustomer(Customer const&)                   1       0 100.00%         4       0 100.00%         0       0   0.00%
+CustomerDatabase::getCustomerHistory(int)                        4       0 100.00%         8       0 100.00%         4       0 100.00%
+CustomerDatabase::addCustomerHistory(int, Action const&)         6       0 100.00%        11       0 100.00%         6       0 100.00%
+CustomerDatabase::customerExists(int)                            5       0 100.00%         9       0 100.00%         4       0 100.00%
+--------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                           16       0 100.00%        32       0 100.00%        14       0 100.00%
+
+File '/home/NETID/ldebau/HW4-headers-2/Inventory.cpp':
+Name                                                       Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+--------------------------------------------------------------------------------------------------------------------------------------
+Inventory::Inventory()                                           1       0 100.00%         1       0 100.00%         0       0   0.00%
+Inventory::~Inventory()                                          1       0 100.00%         1       0 100.00%         0       0   0.00%
+Inventory::printComedy[abi:cxx11](Comedy)                        1       0 100.00%         6       0 100.00%         0       0   0.00%
+Inventory::printDrama[abi:cxx11](Drama)                          1       0 100.00%         6       0 100.00%         0       0   0.00%
+Inventory::printClassics[abi:cxx11](Classics)                    1       0 100.00%        10       0 100.00%         0       0   0.00%
+Inventory::getInventory()                                        7       0 100.00%        29       0 100.00%        12       0 100.00%
+Inventory::addToInventory(Comedy)                                1       0 100.00%         3       0 100.00%         0       0   0.00%
+Inventory::addToInventory(Classics)                              1       0 100.00%         3       0 100.00%         0       0   0.00%
+Inventory::addToInventory(Drama)                                 1       0 100.00%         3       0 100.00%         0       0   0.00%
+Inventory::borrowOrReturnMovie(Action const&, bool)             46       0 100.00%        62       0 100.00%        42       5  88.10%
+--------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                           61       0 100.00%       124       0 100.00%        54       5  90.74%
+
+File '/home/NETID/ldebau/HW4-headers-2/main.cpp':
+Name                                                       Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+--------------------------------------------------------------------------------------------------------------------------------------
+main                                                             1       0 100.00%         7       0 100.00%         0       0   0.00%
+--------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                            1       0 100.00%         7       0 100.00%         0       0   0.00%
+
+File '/home/NETID/ldebau/HW4-headers-2/MovieDatabase.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MovieDatabase::~MovieDatabase()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                1       0 100.00%         1       0 100.00%         0       0   0.00%
+MovieDatabase::MovieDatabase(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                                                                                                                                                                           1       0 100.00%         7       0 100.00%         0       0   0.00%
+MovieDatabase::customerLineAdding(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)                                                                                                                                                                                                                                                                                                                                                                                                                                            1       0 100.00%        10       0 100.00%         0       0   0.00%
+MovieDatabase::readInventoryFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                                                                                                                                                                       1       0 100.00%         7       0 100.00%         0       0   0.00%
+MovieDatabase::inventoryLineAdding(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)                                                                                                                                                                                                                                                                                                                                                                                                                                          10       0 100.00%        57       0 100.00%         6       0 100.00%
+MovieDatabase::readCustomerActions(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                                                                                                                                                                     1       0 100.00%         7       0 100.00%         0       0   0.00%
+MovieDatabase::actionLineAdding(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)                                                                                                                                                                                                                                                                                                                                                                                                                                             31       0 100.00%        51       0 100.00%        26       0 100.00%
+MovieDatabase::actionHelper(Action&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&)         9       0 100.00%        20       0 100.00%         6       1  83.33%
+MovieDatabase::fileOpener(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                                                                                     11       0 100.00%        19       0 100.00%        10       0 100.00%
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         66       0 100.00%       179       0 100.00%        48       1  97.92%
+=====================================================
+The lines below were never executed
+=====================================================
+Mon Dec  5 16:07:03 PST 2022
+=====================================================
+To create an output.txt file with all the output from this script
+Run the below command
+      ./create-output.sh > output.txt 2>&1 
+=====================================================

@@ -1,12 +1,13 @@
-//
-//  CustomerDatabase.hpp
-//  HW5
-//
-//  Created by Luc Debaupte on 11/18/22.
-//
+/**
+ * @file CustomerDatabase.h
+ * @author Benjamin Nguyen
+ * @brief Header files for CustomerDatabase, CustomerHistory, Action, and
+ * Customer
+ * @date 2022-11-13
+ *
+ */
 
-#ifndef CustomerDatabase_h
-#define CustomerDatabase_h
+#pragma once
 
 #include <string>
 #include <unordered_map>
@@ -14,16 +15,40 @@
 #include "Movie.h"
 #include "Customer.h"
 #include "CustomerHistory.h"
+#include "MyHashFunction.h"
+#include "Action.h"
 
+//////////////////////////////////////////////////
+// class Customer Database deals with the storage 
+// of customer and their history
+//////////////////////////////////////////////////
 class CustomerDatabase {
+
+  //overload of operator<<
   friend std::ostream &operator<<(std::ostream &, const CustomerDatabase);
 private:
-//   std::unordered_map<Customer, int,  CustomerHistory> customerMap;
+
+  // map to keep track of customer, includes MyHashFunction as hashtable
+  std::unordered_map<Customer, CustomerHistory, MyHashFunction> customerMap;
 
 public:
-  int getCustomerHistory(int customer_id);
-  bool addCustomer(int customer_id, std::string first_name, std::string last_name);
-  
-};
+  //////////////////////////////////////////////////
+  // function to get history of customer
+  //////////////////////////////////////////////////
+  int getCustomerHistory(int customerID);
 
-#endif /* CustomerDatabase_h */
+  //////////////////////////////////////////////////
+  // function to add to customer history
+  //////////////////////////////////////////////////
+  void addCustomerHistory(int customerID, const Action &argAction);
+
+  //////////////////////////////////////////////////
+  // function to add customer 
+  //////////////////////////////////////////////////
+  void addCustomer(const Customer &argCustomer);
+
+  //////////////////////////////////////////////////
+  // function to check if customer exists
+  //////////////////////////////////////////////////
+  bool customerExists(int customerID);
+};

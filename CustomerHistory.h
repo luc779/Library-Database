@@ -1,24 +1,35 @@
-//
-//  CustomerHistory.hpp
-//  HW5
-//
-//  Created by Luc Debaupte on 11/18/22.
-//
-
-#ifndef CustomerHistory_h
-#define CustomerHistory_h
-
-#include <vector>
+#pragma once
+#include <list>
 #include <string>
+#include <iostream>
 #include "Action.h"
 
+//////////////////////////////////////////////////
+// class CustomerHistory deals stores the, 
+// customers history in a list
+//////////////////////////////////////////////////
 class CustomerHistory {
 private:
-  std::vector<Action> action_vector;
+  std::list<Action> action_list;
 
 public:
-  bool addToHistory(std::string action, char movie_type, std::string director, std::string title, int year);
-  bool addToHistory(std::string action, char movie_type, std::string director, std::string title, std::string major_actor, int release_date);
-};
+  //////////////////////////////////////////////////
+  // function to add action to action_list list
+  //////////////////////////////////////////////////
+  void addToHistory(Action argAction) { 
+    action_list.push_front(argAction);
+  }
 
-#endif /* CustomerHistory_h */
+  //////////////////////////////////////////////////
+  // function to print/display history
+  //////////////////////////////////////////////////
+  void getHistory() const {
+    if (action_list.empty()) {
+      std::cout << "     No History" << std::endl;
+    }
+
+    for (const auto action : action_list) {
+      std::cout << "     " << action << std::endl;
+    }
+  }
+};

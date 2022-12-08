@@ -1,14 +1,9 @@
-//
-//  main.cpp
-//  HW5
-//
-//  Created by Luc Debaupte on 11/18/22.
-//
-
 #include "MovieDatabase.h"
 
 int main() {
-    MovieDatabase movieBase("data4customers.txt");
-    // movieBase.readInventoryFile("data4movies.txt");
-    // movieBase.readCustomerActions("data4commands.txt");
+    MovieDatabase movie_fake("fakeFileToCauseError.txt");
+    MovieDatabase movie_base("data4customers.txt");
+    movie_base.readInventoryFile("data4movies.txt");
+    movie_base.readCustomerActions("data4commands.txt");
+    return 0;
 }
